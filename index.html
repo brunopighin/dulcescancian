@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cancián Dulces Artesanales – Elaboramos dulces, dulces y conservas con recetas familiares y materias primas seleccionadas desde 1985.">
+    <meta name="keywords" content="dulce de leche artesanal, dulces artesanales, conservas, dulces caseros, productos regionales Argentina">
+    <meta property="og:title" content="Cancián – Dulces Artesanales">
+    <meta property="og:description" content="Dulces y dulces artesanales con recetas familiares de tradición. Desde 1985.">
+    <meta property="og:type" content="website">
+    <title>Cancián – Dulces Artesanales</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='14' fill='%237B1D1D'/><text x='50%25' y='66%25' text-anchor='middle' font-family='Georgia,serif' font-size='60' fill='%23C9953A'>C</text></svg>">
+</head>
+<body class="is-loading">
+
+    <!-- ====== LOADING SCREEN ====== -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-inner">
+            <div class="loading-emblem">
+                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="46" fill="none" stroke="#C9953A" stroke-width="1.5" stroke-dasharray="289" stroke-dashoffset="289" class="loading-circle-anim"/>
+                    <text x="50%" y="65%" text-anchor="middle" font-family="Georgia,serif" font-size="52" fill="#C9953A">C</text>
+                </svg>
+            </div>
+            <p class="loading-name">Cancián</p>
+            <p class="loading-sub">Dulces Artesanales</p>
+            <div class="loading-bar-wrap"><div class="loading-bar-fill" id="loadingBar"></div></div>
+        </div>
+    </div>
+
+    <!-- ====== WHATSAPP FLOTANTE ====== -->
+    <a href="https://wa.me/5491112345678?text=Hola!%20Me%20interesa%20conocer%20sus%20productos%20artesanales." class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Escribinos por WhatsApp">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+        </svg>
+        <span class="wa-label">WhatsApp</span>
+    </a>
+
+    <!-- ====== NAVBAR ====== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+            <a href="#home" class="nav-logo">
+                <img src="logo-cropped.png" alt="Cancián – Dulces Artesanales" class="nav-logo-img">
+            </a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+                <li><a href="#catalogo" class="nav-link">Catálogo</a></li>
+                <li><a href="#mayoristas" class="nav-link">Mayoristas</a></li>
+                <li><a href="#galeria" class="nav-link">Galería</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+
+            <a href="https://wa.me/5491112345678" class="btn-nav-wa" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" width="15" height="15" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                </svg>
+                WhatsApp
+            </a>
+
+            <button class="cart-nav-btn" id="cartNavBtn" aria-label="Ver carrito">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 001.99 1.61h9.72a2 2 0 001.99-1.61L23 6H6"/></svg>
+                <span class="cart-badge" id="cartBadge" style="display:none">0</span>
+            </button>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ====== HERO ====== -->
+    <section class="hero" id="home">
+        <div class="hero-bg-orbs">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="orb orb-3"></div>
+        </div>
+
+        <div class="hero-inner">
+            <!-- Text -->
+            <div class="hero-text" data-reveal="fade-right">
+                <div class="hero-badge">
+                    <span class="badge-pulse"></span>
+                    Desde 1985 &nbsp;·&nbsp; Producción 100% Artesanal
+                </div>
+                <h1 class="hero-h1">
+                    Dulces Artesanales<br>
+                    <em>con sabor a tradición</em>
+                </h1>
+                <p class="hero-p">
+                    Elaboramos dulces y conservas artesanales<br class="hero-br">
+                    con recetas familiares y materias primas seleccionadas.
+                </p>
+                <div class="hero-btns">
+                    <a href="#catalogo" class="btn-primary">
+                        Ver Catálogo
+                        <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" xmlns="http://www.w3.org/2000/svg"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                    <a href="https://wa.me/5491112345678?text=Hola!%20Me%20interesan%20sus%20productos%20artesanales." class="btn-outline-hero" target="_blank" rel="noopener">
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Consultar por WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Visual -->
+            <div class="hero-visual" data-reveal="fade-left">
+                <div class="hero-ring hero-ring-out"></div>
+                <div class="hero-ring hero-ring-in"></div>
+                <div class="hero-jars-wrap">
+                    <!-- Jar 1 -->
+                    <div class="hjar hjar-1">
+                        <svg viewBox="0 0 110 155" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="18" y="18" width="74" height="16" rx="8" fill="#7B1D1D"/>
+                            <rect x="13" y="28" width="84" height="9" rx="4.5" fill="#9B2525"/>
+                            <rect x="26" y="37" width="58" height="18" rx="5" fill="#F5EFE7" stroke="#C4956A" stroke-width="1.2"/>
+                            <rect x="13" y="52" width="84" height="86" rx="11" fill="#FAF7F2" stroke="#C4956A" stroke-width="1.5"/>
+                            <rect x="15" y="108" width="80" height="28" rx="0 0 10 10" fill="#C4956A" opacity="0.45"/>
+                            <rect x="22" y="62" width="66" height="46" rx="4" fill="white" stroke="#D4A853" stroke-width="0.9"/>
+                            <text x="55" y="80" text-anchor="middle" font-family="Georgia,serif" font-size="8.5" fill="#7B1D1D" font-weight="bold">Cancián</text>
+                            <line x1="28" y1="83.5" x2="82" y2="83.5" stroke="#D4A853" stroke-width="0.7"/>
+                            <text x="55" y="94" text-anchor="middle" font-family="Georgia,serif" font-size="5.8" fill="#5C3D1E">Dulce de Leche</text>
+                            <text x="55" y="103" text-anchor="middle" font-family="Georgia,serif" font-size="4.8" fill="#9B7B5A">Artesanal · 450g</text>
+                            <rect x="18" y="55" width="3.5" height="18" rx="1.5" fill="white" opacity="0.55"/>
+                        </svg>
+                        <span class="hjar-label">Dulce de Leche</span>
+                    </div>
+                    <!-- Jar 2 -->
+                    <div class="hjar hjar-2">
+                        <svg viewBox="0 0 110 155" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="18" y="18" width="74" height="16" rx="8" fill="#B52424"/>
+                            <rect x="13" y="28" width="84" height="9" rx="4.5" fill="#D43030"/>
+                            <rect x="26" y="37" width="58" height="18" rx="5" fill="#F5EFE7" stroke="#C4956A" stroke-width="1.2"/>
+                            <rect x="13" y="52" width="84" height="86" rx="11" fill="#FAF7F2" stroke="#C4956A" stroke-width="1.5"/>
+                            <rect x="15" y="108" width="80" height="28" rx="0 0 10 10" fill="#C0392B" opacity="0.38"/>
+                            <rect x="22" y="62" width="66" height="46" rx="4" fill="white" stroke="#D4A853" stroke-width="0.9"/>
+                            <text x="55" y="80" text-anchor="middle" font-family="Georgia,serif" font-size="8.5" fill="#7B1D1D" font-weight="bold">Cancián</text>
+                            <line x1="28" y1="83.5" x2="82" y2="83.5" stroke="#D4A853" stroke-width="0.7"/>
+                            <text x="55" y="94" text-anchor="middle" font-family="Georgia,serif" font-size="5.8" fill="#5C3D1E">Dulce</text>
+                            <text x="55" y="103" text-anchor="middle" font-family="Georgia,serif" font-size="4.8" fill="#9B7B5A">de Frutilla · 340g</text>
+                            <rect x="18" y="55" width="3.5" height="18" rx="1.5" fill="white" opacity="0.55"/>
+                        </svg>
+                        <span class="hjar-label">Dulce</span>
+                    </div>
+                    <!-- Jar 3 -->
+                    <div class="hjar hjar-3">
+                        <svg viewBox="0 0 110 155" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="18" y="18" width="74" height="16" rx="8" fill="#4A7C3F"/>
+                            <rect x="13" y="28" width="84" height="9" rx="4.5" fill="#5D9B50"/>
+                            <rect x="26" y="37" width="58" height="18" rx="5" fill="#F5EFE7" stroke="#C4956A" stroke-width="1.2"/>
+                            <rect x="13" y="52" width="84" height="86" rx="11" fill="#FAF7F2" stroke="#C4956A" stroke-width="1.5"/>
+                            <rect x="15" y="108" width="80" height="28" rx="0 0 10 10" fill="#E8A020" opacity="0.38"/>
+                            <rect x="22" y="62" width="66" height="46" rx="4" fill="white" stroke="#D4A853" stroke-width="0.9"/>
+                            <text x="55" y="80" text-anchor="middle" font-family="Georgia,serif" font-size="8.5" fill="#7B1D1D" font-weight="bold">Cancián</text>
+                            <line x1="28" y1="83.5" x2="82" y2="83.5" stroke="#D4A853" stroke-width="0.7"/>
+                            <text x="55" y="94" text-anchor="middle" font-family="Georgia,serif" font-size="5.8" fill="#5C3D1E">Dulce de Membrillo</text>
+                            <text x="55" y="103" text-anchor="middle" font-family="Georgia,serif" font-size="4.8" fill="#9B7B5A">Conserva · 500g</text>
+                            <rect x="18" y="55" width="3.5" height="18" rx="1.5" fill="white" opacity="0.55"/>
+                        </svg>
+                        <span class="hjar-label">Conservas</span>
+                    </div>
+                </div>
+                <!-- Floating deco -->
+                <div class="float-el fl-1">🍓</div>
+                <div class="float-el fl-2">🍃</div>
+                <div class="float-el fl-3">🍑</div>
+                <div class="float-el fl-4">✨</div>
+            </div>
+        </div>
+
+        <div class="hero-scroll">
+            <span>Descubrí más</span>
+            <div class="scroll-track"><div class="scroll-dot"></div></div>
+        </div>
+    </section>
+
+    <!-- ====== FEATURE STRIP ====== -->
+    <section class="strip">
+        <div class="strip-inner">
+            <div class="strip-item" data-reveal="fade-up">
+                <div class="strip-icon">🫙</div>
+                <div><h4>100% Artesanal</h4><p>Elaboración manual sin procesos industriales</p></div>
+            </div>
+            <div class="strip-item" data-reveal="fade-up" data-delay="100">
+                <div class="strip-icon">🌿</div>
+                <div><h4>Sin Conservantes</h4><p>Solo ingredientes naturales y seleccionados</p></div>
+            </div>
+            <div class="strip-item" data-reveal="fade-up" data-delay="200">
+                <div class="strip-icon">🚚</div>
+                <div><h4>Envíos a Todo el País</h4><p>Embalaje especial para conservar la frescura</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== NOSOTROS ====== -->
+    <section class="about" id="nosotros">
+        <div class="about-inner">
+            <!-- Visual -->
+            <div class="about-visual" data-reveal="fade-right">
+                <div class="about-img-frame">
+                    <div class="about-art">
+                        <div class="art-pot-wrap">
+                            <svg viewBox="0 0 200 220" xmlns="http://www.w3.org/2000/svg" class="art-pot-svg">
+                                <!-- Steam -->
+                                <path d="M80 30 Q75 15 80 5" stroke="#C4956A" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6" class="steam-path s1"/>
+                                <path d="M100 28 Q95 10 100 0" stroke="#C4956A" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6" class="steam-path s2"/>
+                                <path d="M120 30 Q125 15 120 5" stroke="#C4956A" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6" class="steam-path s3"/>
+                                <!-- Pot body -->
+                                <ellipse cx="100" cy="75" rx="70" ry="12" fill="#8B5E3C"/>
+                                <rect x="30" y="73" width="140" height="90" rx="20 20 30 30" fill="#A0714F"/>
+                                <!-- Content -->
+                                <ellipse cx="100" cy="73" rx="66" ry="10" fill="#C4956A"/>
+                                <!-- Handles -->
+                                <rect x="12" y="90" width="22" height="16" rx="8" fill="#8B5E3C"/>
+                                <rect x="166" y="90" width="22" height="16" rx="8" fill="#8B5E3C"/>
+                                <!-- Lid -->
+                                <ellipse cx="100" cy="72" rx="68" ry="11" fill="#7A5335" stroke="#5C3D1E" stroke-width="1"/>
+                                <ellipse cx="100" cy="68" rx="14" ry="5" fill="#5C3D1E"/>
+                                <circle cx="100" cy="64" r="6" fill="#4A2C17"/>
+                                <!-- Shine on pot -->
+                                <path d="M50 90 Q48 120 52 150" stroke="white" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.15"/>
+                                <!-- Table -->
+                                <rect x="0" y="168" width="200" height="8" rx="4" fill="#C4956A" opacity="0.4"/>
+                                <!-- Jar beside pot -->
+                                <rect x="148" y="120" width="38" height="48" rx="7" fill="#FAF7F2" stroke="#C4956A" stroke-width="1.2"/>
+                                <rect x="152" y="112" width="30" height="12" rx="5" fill="#FAF7F2" stroke="#C4956A" stroke-width="1.2"/>
+                                <rect x="148" y="107" width="38" height="8" rx="4" fill="#7B1D1D"/>
+                                <rect x="153" y="128" width="28" height="20" rx="3" fill="white" stroke="#D4A853" stroke-width="0.8"/>
+                                <text x="167" y="141" text-anchor="middle" font-family="Georgia,serif" font-size="5" fill="#7B1D1D">Cancián</text>
+                                <!-- Fruit icons -->
+                                <text x="20" y="160" font-size="18">🍓</text>
+                                <text x="165" y="175" font-size="14">🍑</text>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-frame-deco"></div>
+            </div>
+
+            <!-- Text -->
+            <div class="about-text" data-reveal="fade-left">
+                <div class="section-tag">Nuestra Historia</div>
+                <h2 class="section-title">Una historia que<br><em>sabe a familia</em></h2>
+                <div class="title-line"></div>
+                <div class="about-checks">
+                    <div class="check-item">
+                        <div class="check-icon">✓</div>
+                        <div><strong>Ingredientes seleccionados</strong><p>Solo frutas y materias primas de primera calidad</p></div>
+                    </div>
+                    <div class="check-item">
+                        <div class="check-icon">✓</div>
+                        <div><strong>Cocción artesanal</strong><p>A fuego lento, respetando los tiempos naturales</p></div>
+                    </div>
+                    <div class="check-item">
+                        <div class="check-icon">✓</div>
+                        <div><strong>Sin conservantes artificiales</strong><p>La calidad natural es nuestro único preservante</p></div>
+                    </div>
+                </div>
+                <a href="#catalogo" class="btn-outline-brown">Ver nuestros productos →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== CATÁLOGO ====== -->
+    <section class="catalog" id="catalogo">
+        <div class="catalog-inner">
+            <div class="section-header" data-reveal="fade-up">
+                <div class="section-tag">Nuestros Productos</div>
+                <h2 class="section-title">Catálogo Artesanal</h2>
+                <p class="section-sub">Seleccioná tu favorito y consultanos por WhatsApp</p>
+            </div>
+
+            <!-- Controls -->
+            <div class="cat-controls" data-reveal="fade-up">
+                <div class="cat-search">
+                    <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" xmlns="http://www.w3.org/2000/svg"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35" stroke-linecap="round"/></svg>
+                    <input type="text" id="searchInput" placeholder="Buscar producto..." autocomplete="off">
+                    <button class="search-clear" id="searchClear" style="display:none">✕</button>
+                </div>
+                <div class="cat-filters" id="catFilters">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="dulce-de-leche">Dulce de Leche</button>
+                    <button class="filter-btn" data-filter="dulces">Dulces</button>
+                    <button class="filter-btn" data-filter="conservas">Conservas</button>
+                    <button class="filter-btn" data-filter="ediciones-especiales">Ediciones Especiales</button>
+                </div>
+            </div>
+
+            <!-- Grid -->
+            <div class="products-grid" id="productsGrid"></div>
+
+            <div class="no-results" id="noResults">
+                <div class="no-results-icon">🫙</div>
+                <p>No encontramos productos para tu búsqueda.</p>
+                <button class="btn-outline-brown" onclick="resetFilters()">Ver todos los productos</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== MAYORISTAS ====== -->
+    <section class="wholesale" id="mayoristas">
+        <div class="wholesale-inner">
+            <div class="wholesale-content" data-reveal="fade-right">
+                <div class="section-tag section-tag-light">Ventas Mayoristas</div>
+                <h2 class="wholesale-title">¿Tenés un local<br>o emprendimiento?</h2>
+                <p class="wholesale-sub">
+                    Trabajamos con comercios, dietéticas, restaurantes y revendedores
+                    con condiciones especiales y pedidos a medida.
+                </p>
+                <div class="wholesale-grid">
+                    <div class="w-benefit" data-reveal="fade-up">
+                        <div class="w-icon">💰</div>
+                        <div><strong>Precios Mayoristas</strong><p>Descuentos por volumen y condiciones especiales para revendedores</p></div>
+                    </div>
+                    <div class="w-benefit" data-reveal="fade-up" data-delay="100">
+                        <div class="w-icon">📦</div>
+                        <div><strong>Pedidos Personalizados</strong><p>Etiquetado especial y packaging a tu medida</p></div>
+                    </div>
+                    <div class="w-benefit" data-reveal="fade-up" data-delay="200">
+                        <div class="w-icon">🚚</div>
+                        <div><strong>Envío a Todo el País</strong><p>Logística segura con embalaje especial de conservación</p></div>
+                    </div>
+                    <div class="w-benefit" data-reveal="fade-up" data-delay="300">
+                        <div class="w-icon">🤝</div>
+                        <div><strong>Atención Directa</strong><p>Trato personal con el productor, sin intermediarios</p></div>
+                    </div>
+                </div>
+                <div class="wholesale-ctas">
+                    <a href="https://wa.me/5491112345678?text=Hola!%20Quisiera%20información%20sobre%20precios%20mayoristas." class="btn-wa-xl" target="_blank" rel="noopener">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Consultá por WhatsApp
+                    </a>
+                    <a href="mailto:mayoristas@cancian.com.ar" class="btn-outline-white">Enviar Email</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== GALERÍA ====== -->
+    <section class="gallery" id="galeria">
+        <div class="gallery-inner">
+            <div class="section-header" data-reveal="fade-up">
+                <div class="section-tag">Galería</div>
+                <h2 class="section-title">El proceso artesanal</h2>
+                <p class="section-sub">Cada frasco cuenta una historia de dedicación y tradición</p>
+            </div>
+            <div class="gallery-grid" data-reveal="fade-up">
+                <div class="gitem gitem-lg">
+                    <div class="gimg" style="background:linear-gradient(135deg,#C4956A 0%,#7A5335 100%)"><span class="gemoji">🫙</span></div>
+                    <div class="govl"><p>Frascos recién elaborados</p></div>
+                </div>
+                <div class="gitem">
+                    <div class="gimg" style="background:linear-gradient(135deg,#C0392B 0%,#7B1D1D 100%)"><span class="gemoji">🍓</span></div>
+                    <div class="govl"><p>Frutillas de temporada</p></div>
+                </div>
+                <div class="gitem">
+                    <div class="gimg" style="background:linear-gradient(135deg,#E67E22 0%,#A04000 100%)"><span class="gemoji">🍑</span></div>
+                    <div class="govl"><p>Duraznos seleccionados</p></div>
+                </div>
+                <div class="gitem gitem-tall">
+                    <div class="gimg" style="background:linear-gradient(135deg,#C9953A 0%,#7B3F00 100%)"><span class="gemoji">🍯</span></div>
+                    <div class="govl"><p>Dulce de leche artesanal</p></div>
+                </div>
+                <div class="gitem">
+                    <div class="gimg" style="background:linear-gradient(135deg,#27AE60 0%,#1A5E36 100%)"><span class="gemoji">🌿</span></div>
+                    <div class="govl"><p>Ingredientes naturales</p></div>
+                </div>
+                <div class="gitem">
+                    <div class="gimg" style="background:linear-gradient(135deg,#8B2020 0%,#4A0E0E 100%)"><span class="gemoji">📦</span></div>
+                    <div class="govl"><p>Packaging artesanal</p></div>
+                </div>
+                <div class="gitem gitem-wide">
+                    <div class="gimg" style="background:linear-gradient(135deg,#4A2C17 0%,#2C1A0E 100%)"><span class="gemoji">👩‍🍳</span></div>
+                    <div class="govl"><p>Elaboración familiar</p></div>
+                </div>
+                <div class="gitem">
+                    <div class="gimg" style="background:linear-gradient(135deg,#F39C12 0%,#9A6000 100%)"><span class="gemoji">🍋</span></div>
+                    <div class="govl"><p>Cítricos de huerta propia</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== TESTIMONIOS ====== -->
+    <section class="testimonials" id="testimonios">
+        <div class="test-inner">
+            <div class="section-header" data-reveal="fade-up">
+                <div class="section-tag">Testimonios</div>
+                <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+            </div>
+            <div class="test-slider" data-reveal="fade-up">
+                <div class="test-track-wrap">
+                    <div class="test-track" id="testTrack">
+                        <div class="tcard">
+                            <div class="tcard-stars">★★★★★</div>
+                            <p class="tcard-text"></p>
+                            <div class="tcard-author">
+                                <div class="tcard-av" style="background:#C9953A"></div>
+                                <div><strong></strong><span></span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="test-controls">
+                    <button class="t-btn t-prev" id="tPrev" aria-label="Anterior">
+                        <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" xmlns="http://www.w3.org/2000/svg"><path d="M15 18l-6-6 6-6"/></svg>
+                    </button>
+                    <div class="test-dots" id="testDots"></div>
+                    <button class="t-btn t-next" id="tNext" aria-label="Siguiente">
+                        <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" xmlns="http://www.w3.org/2000/svg"><path d="M9 18l6-6-6-6"/></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== CONTACT CTA ====== -->
+    <section class="cta-section" id="contacto">
+        <div class="cta-inner" data-reveal="fade-up">
+            <div class="cta-deco">🫙</div>
+            <h2>¿Listo para probar<br><em>el sabor de la tradición?</em></h2>
+            <p>Hacé tu pedido por WhatsApp o escribinos. Respondemos en el día.</p>
+            <div class="cta-btns">
+                <a href="https://wa.me/5491112345678?text=Hola!%20Quiero%20hacer%20un%20pedido%20de%20dulces%20artesanales." class="btn-wa-xl" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                    Hacer un Pedido
+                </a>
+                <a href="#catalogo" class="btn-outline-brown">Ver Catálogo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== FOOTER ====== -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <svg viewBox="0 0 50 50" width="40" height="40" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="25" cy="25" r="23" fill="none" stroke="#C9953A" stroke-width="1.5"/>
+                        <text x="50%" y="66%" text-anchor="middle" font-family="Georgia,serif" font-size="26" fill="#C9953A">C</text>
+                    </svg>
+                    <div>
+                        <span class="f-brand-name">Cancián</span>
+                        <span class="f-brand-sub">Dulces Artesanales</span>
+                    </div>
+                </div>
+                <p>Elaboramos con amor los sabores que perduran en la memoria. Tradición familiar desde 1985.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Instagram" class="soc-link">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor"/></svg>
+                    </a>
+                    <a href="#" aria-label="Facebook" class="soc-link">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" xmlns="http://www.w3.org/2000/svg"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </a>
+                    <a href="https://wa.me/5491112345678" aria-label="WhatsApp" class="soc-link" target="_blank" rel="noopener">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h5>Navegación</h5>
+                <ul>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#catalogo">Catálogo</a></li>
+                    <li><a href="#mayoristas">Mayoristas</a></li>
+                    <li><a href="#galeria">Galería</a></li>
+                    <li><a href="admin.html">Panel Admin</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h5>Productos</h5>
+                <ul>
+                    <li><a href="#catalogo">Dulce de Leche</a></li>
+                    <li><a href="#catalogo">Dulces</a></li>
+                    <li><a href="#catalogo">Conservas</a></li>
+                    <li><a href="#catalogo">Ediciones Especiales</a></li>
+                    <li><a href="#mayoristas">Pedidos Mayoristas</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col footer-contact-col">
+                <h5>Contacto</h5>
+                <ul class="footer-contact-list">
+                    <li>
+                        <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        <a href="https://wa.me/5491112345678" target="_blank" rel="noopener">+54 9 11 1234-5678</a>
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" xmlns="http://www.w3.org/2000/svg"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        <a href="mailto:info@cancian.com.ar">info@cancian.com.ar</a>
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" xmlns="http://www.w3.org/2000/svg"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        <span>Buenos Aires, Argentina</span>
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14" stroke-linecap="round"/></svg>
+                        <span>Lun – Sáb: 9 a 18hs</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Cancián – Dulces Artesanales. Todos los derechos reservados.</p>
+            <p>Hecho con ❤️ y tradición familiar.</p>
+        </div>
+    </footer>
+
+    <!-- ====== CARRITO ====== -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <div class="cart-panel" id="cartPanel">
+        <div class="cart-header">
+            <h3 class="cart-title">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 001.99 1.61h9.72a2 2 0 001.99-1.61L23 6H6"/></svg>
+                Mi Pedido
+            </h3>
+            <button class="cart-close" id="cartClose">✕</button>
+        </div>
+
+        <div class="cart-empty" id="cartEmpty">
+            <div class="cart-empty-icon">🛒</div>
+            <p>Tu carrito está vacío</p>
+            <small>Agregá productos del catálogo</small>
+        </div>
+
+        <div class="cart-items" id="cartItems"></div>
+
+        <div class="cart-footer" id="cartFooter">
+            <div class="cart-total-row">
+                <span>Total</span>
+                <span class="cart-total-amount" id="cartTotalAmount"></span>
+            </div>
+            <button class="cart-wa-btn" id="cartWaBtn">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                Hacer pedido por WhatsApp
+            </button>
+            <button class="cart-clear-btn" id="cartClearBtn">Vaciar carrito</button>
+        </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Cerrar">✕</button>
+        <img class="lightbox-img" id="lightboxImg" alt="">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
